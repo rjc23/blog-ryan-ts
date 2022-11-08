@@ -30,7 +30,7 @@ export default function Code({ posts }) {
           <p>
             You can search{' '}
             <Link href={'/category'}>
-              <a>by category.</a>
+              <a>by category. </a>
             </Link>
           </p>
         </div>
