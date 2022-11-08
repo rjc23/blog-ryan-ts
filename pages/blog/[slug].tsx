@@ -32,8 +32,6 @@ export async function getStaticPaths() {
     return { params: { slug: post.attributes.urlSlug } };
   });
 
-  console.log(paths);
-
   return {
     paths,
     fallback: false

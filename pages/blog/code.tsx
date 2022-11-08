@@ -4,6 +4,7 @@ import { GET_LATEST_POSTS } from 'graphql/queries';
 import Link from 'next/link';
 import readingTime from 'reading-time';
 import LatestPosts from 'components/LatestPosts';
+import BlogPost from '../../components/BlogPost';
 
 const client = new ApolloClient({
   uri: process.env.CMS_HOST,
@@ -14,7 +15,7 @@ export default function Code({ posts }) {
   return (
     <Container
       title="Blog/Code – Ryan Carmody"
-      description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
+      description="Everything code in my life"
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
@@ -47,9 +48,18 @@ export async function getStaticProps() {
     variables: { type: 'code' }
   });
 
+  let arrayForSort = [...data.blogPosts.data];
+
+  arrayForSort.sort(function (a, b) {
+    return (
+      new Date(b.attributes.createdAt).getTime() -
+      new Date(a.attributes.createdAt).getTime()
+    );
+  });
+
   return {
     props: {
-      posts: data.blogPosts.data
+      posts: arrayForSort
     }
   };
 }

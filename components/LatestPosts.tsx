@@ -4,7 +4,7 @@ import readingTime from 'reading-time';
 
 export default function LatestPosts({ posts }) {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 grid-flow-dense">
       {posts.map((val, i) => {
         const options: any = {
           year: 'numeric',
@@ -22,10 +22,11 @@ export default function LatestPosts({ posts }) {
           >
             <Link href={'/blog/' + val.attributes.urlSlug}>
               <a>
-                <div className="imageContainer mb-2">
+                <div className="mb-2">
                   <Image
                     src={val.attributes.socialImage?.data?.attributes.url}
-                    layout="fill"
+                    width={672}
+                    height={400}
                     alt={val.attributes.socialImage?.data?.attributes.caption}
                     className="image rounded-tl-lg rounded-tr-lg"
                     quality={1}
