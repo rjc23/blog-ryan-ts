@@ -12,7 +12,7 @@ export default function Home() {
           <div className="flex flex-col-reverse justify-between items-start sm:flex-row">
             <div className="flex flex-col pr-8">
               <p className="text-rose-500 dark:text-rose-400">Hi, my name is</p>
-              <h1 className="font-bold text-3xl md:text-6xl -ml-0.5 mb-1 text-black dark:text-white">
+              <h1 className="font-bold text-3xl md:text-6xl -ml-0.5 mb-2 text-black dark:text-white">
                 Ryan Carmody
               </h1>
               <p className="text-gray-700 dark:text-gray-200 mb-4">
@@ -23,6 +23,15 @@ export default function Home() {
                 away at{' '}
                 <Link href="/blog/personal-projects">these projects.</Link>{' '}
               </p>
+              <div>
+                <Link href="https://smugchicken.com">
+                  <a target="_blank" aria-label="Link to Smug Chicken game">
+                    <Image className='rounded-md' src="/smug.jpg" width={800} height={300} />
+
+                  </a>
+
+                </Link>
+              </div>
             </div>
             <div className="w-[80px] sm:w-[200px] relative mb-8 sm:mb-0 ">
               <Image

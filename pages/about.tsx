@@ -11,7 +11,7 @@ export default function About() {
           /about
         </h1>
         <p className="text-black dark:text-white mb-4">
-          My name is Ryan Carmody and I am from{' '}
+          My name is Ryan Carmody and I am a web developer and computer science tutor from{' '}
           <a
             href="https://en.wikipedia.org/wiki/Adelaide"
             target="blank"
@@ -22,8 +22,8 @@ export default function About() {
           .
         </p>
         <p className="text-black dark:text-white mb-4">
-          For about 2 years, I worked full-time for a local company as a web
-          developer, mainly using Angular 2+. I really enjoyed working at this
+          I have a Bachelor of Computer Science from The University of Adelaide, and for about 2 years, I worked full-time for a local company as a web
+          developer, mainly using Angular 2+. I enjoyed working at this
           company but was ready for something new.
         </p>
         <p className="text-black dark:text-white mb-6">

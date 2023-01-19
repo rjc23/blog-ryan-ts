@@ -29,6 +29,19 @@ export default function PlayGames() {
       <div className="flex gap-3 flex-col sm:flex-row sm:gap-12">
         <div className="mt-6 w-8/12 sm:w-3/12 ">
           <Game
+            link="https://smugchicken.com"
+            alt="Smug Chicken"
+            imgSrc="/smug-chicken.png"
+          ></Game>
+          <div>
+            <h4>Smug Chicken</h4>
+            <p>
+              The daily AI art word game.
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 w-8/12 sm:w-3/12 ">
+          <Game
             link="https://wheretaken.com"
             alt="WhereTaken"
             imgSrc="/wheretaken.png"
@@ -46,21 +59,7 @@ export default function PlayGames() {
           ></Game>
           <div>
             <h4>Retro Snake</h4>
-            <p>Eat the food but don’t hit the walls or your own body!</p>
-          </div>
-        </div>
-        <div className="mt-6 w-8/12 sm:w-3/12 ">
-          <Game
-            link="https://playworldle.com"
-            alt="Retro Worldle"
-            imgSrc="/world.png"
-          ></Game>
-          <div>
-            <h4>Worldle</h4>
-            <p>
-              Replica of the original but with extra features! Guess countries,
-              flags and capitals.
-            </p>
+            <p>Eat the food but don't hit the walls or your own body!</p>
           </div>
         </div>
       </div>
