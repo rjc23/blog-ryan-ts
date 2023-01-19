@@ -8,7 +8,7 @@ import cn from 'classnames';
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
 
-function NavItem({ href, text }) {
+function NavItem({ href, text, isGame }) {
   const router = useRouter();
   const isActive = router.asPath === href;
 
@@ -19,10 +19,10 @@ function NavItem({ href, text }) {
           isActive
             ? 'font-semibold text-gray-800 dark:text-gray-200'
             : 'font-normal text-gray-600 dark:text-gray-400',
-          'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
+          'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all',
         )}
       >
-        <span className="capsize">{text}</span>
+        <span className={cn(isGame ? 'font-extrabold text-transparent text-lg bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600' : 'capsize')}>{text}</span>
       </a>
     </NextLink>
   );
@@ -84,9 +84,10 @@ export default function Container(props) {
           </a>
           <div className="ml-[-0.60rem]">
             <MobileMenu />
-            <NavItem href="/" text="Home" />
-            <NavItem href="/about" text="About" />
-            <NavItem href="/blog" text="Blog" />
+            <NavItem href="/" text="Home" isGame={false} />
+            <NavItem href="/about" text="About" isGame={false} />
+            <NavItem href="/blog" text="Blog" isGame={false} />
+            <NavItem href="https://games.ryancarmody.dev" text="Games" isGame={true} />
           </div>
           <button
             aria-label="Toggle Dark Mode"
