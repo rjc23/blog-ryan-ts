@@ -19,7 +19,7 @@ export default function Home() {
                 Web Developer and Computer Science Tutor
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Currently working at The University of Adelaide and chipping
+                Currently working at The University of Adelaide, MPL Enteprises (<a href='https://worldle.teuteuf.fr' target='blank'>Worldle</a>, <a href='https://wheretaken.teuteuf.fr' target='blank'>WhereTaken</a> etc) and chipping
                 away at{' '}
                 <Link href="/blog/personal-projects">these projects.</Link>{' '}
               </p>
@@ -27,9 +27,7 @@ export default function Home() {
                 <Link href="https://smugchicken.com">
                   <a target="_blank" aria-label="Link to Smug Chicken game">
                     <Image className='rounded-md' src="/smug.jpg" width={800} height={300} />
-
                   </a>
-
                 </Link>
               </div>
             </div>

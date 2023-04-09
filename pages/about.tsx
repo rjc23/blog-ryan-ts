@@ -36,6 +36,9 @@ export default function About() {
           This has enabled me to learn new skills, such as Next.js, Web
           Scraping, Twitter API and much more.
         </p>
+        <p className="text-black dark:text-white mb-6">
+          In February 2023, I sold my online game, <a href='https://wheretaken.teuteuf.fr'>WhereTaken</a> to MPL Enterprises and now work for them making enhancements to the game, as well as work on other gaming projects.
+        </p>
         <h2 className="text-black dark:text-white mb-4">Get in contact</h2>
         <ul>
           <li>
