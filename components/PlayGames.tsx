@@ -42,6 +42,19 @@ export default function PlayGames() {
         </div>
         <div className="mt-6 w-8/12 sm:w-3/12 ">
           <Game
+            link="https://searchle.net"
+            alt="Searchle"
+            imgSrc="/searchle.png"
+          ></Game>
+          <div>
+            <h4>Searchle</h4>
+            <p>
+              How does google autocomplete this search?
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 w-8/12 sm:w-3/12 ">
+          <Game
             link="https://wheretaken.com"
             alt="WhereTaken"
             imgSrc="/wheretaken.png"
